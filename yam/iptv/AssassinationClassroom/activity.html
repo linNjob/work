@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AssassinationClassroom</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+	$(document).ready(function() {
+		$('.photo').each(function() {
+			$(this).click(function() {
+				$('.photo').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="headerWrap">
+			<div class="man01"></div>
+			<div class="logo"></div>
+			<div class="man02"></div>
+		</div>
+	</header>
+	<article>
+		<div class="articleWrap">
+			<div class="menu">
+				<a class="btn1"  onclick="" href="index.html"></a>
+				<a class="btn2" href="teacher.html"></a>
+				<a class="btn3" href="rule.html"></a>
+				<a class="btn4 tch4" href="activity.html"></a>
+			</div>
+			<div class="text03"></div>
+			<div class="gameBox">
+				<a class="photo" href="javascript: void(0);">
+					<img class="picBlack" src="images/photo01-1.jpg" alt="">
+					<img class="picBlack pic" src="images/photo01-2.jpg" alt="">
+				</a>
+				<a class="photo" href="javascript: void(0);">
+					<img class="picBlack" src="images/photo02-1.jpg" alt="">
+					<img class="picBlack pic" src="images/photo02-2.jpg" alt="">
+				</a>
+				<a class="photo" href="javascript: void(0);">
+					<img class="picBlack" src="images/photo03-1.jpg" alt="">
+					<img class="picBlack pic" src="images/photo03-2.jpg" alt="">
+				</a>
+				<a class="photo" href="javascript: void(0);">
+					<img class="picBlack" src="images/photo04-1.jpg" alt="">
+					<img class="picBlack pic" src="images/photo04-2.jpg" alt="">
+				</a>
+				<a class="photo" href="javascript: void(0);">
+					<img class="picBlack" src="images/photo05-1.jpg" alt="">
+					<img class="picBlack pic" src="images/photo05-2.jpg" alt="">
+				</a>
+				<a class="photo" href="javascript: void(0);">
+					<img class="picBlack" src="images/photo06-1.jpg" alt="">
+					<img class="picBlack pic" src="images/photo06-2.jpg" alt="">
+				</a>
+				<a class="photo" href="javascript: void(0);" style="margin-left:140px;">
+					<img class="picBlack" src="images/photo07-1.jpg" alt="">
+					<img class="picBlack pic" src="images/photo07-2.jpg" alt="">
+				</a>
+				<a class="photo" href="javascript: void(0);">
+					<img class="picBlack" src="images/photo08-1.jpg" alt="">
+					<img class="picBlack pic" src="images/photo08-2.jpg" alt="">
+				</a>
+			</div>
+			<a class="btn02" href="userData.html"><img src="images/btn02.png" alt=""></a>
+		</div>
+	</article>
+	<footer>
+		<div class="footerWrap">
+			<div class="footerLogo">
+				<a href="http://tv.yam.com"><img width="95" height="40" src="images/footerLogo01.jpg" alt=""></a>
+			</div>
+			<div class="copyright1">&copy; 2015 movie.yam Inc</div>
+		</div>
+	</footer>
+</body>
+</html>
