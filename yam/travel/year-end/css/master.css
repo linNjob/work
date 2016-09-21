@@ -1,0 +1,204 @@
+body{
+	margin:0;
+	background-color:#fe9595;
+}
+.wrapBG{
+	width:100%;
+	background:url(../images/BG.jpg) top left repeat-x; 
+	float:left;
+}
+.topLine{
+	width:100%;
+	height:34px;
+	background:url(../images/top_bg.jpg) top left repeat-x;
+	position:relative;
+	z-index:10;
+}
+.wrapBox{
+	width:960px;
+	margin:0 auto;
+}
+.masterBanner{
+	width:960px;
+	height:500px;}
+.logo{
+	background:url(../images/LOGO.png);
+	width:254px;
+	height:150px;
+	position:absolute;
+	z-index:10;
+	margin-left:353px;
+}
+.masterLogo{
+	background:url(../images/master_LOGO.png);
+	width:601px;
+	height:417px;
+	position:absolute;
+	z-index:10;
+	margin-left:-70px;
+	margin-top:20px;
+}
+.firecracker{
+	background:url(../images/firecracker.png);
+	width:382px;
+	height:533px;
+	position:absolute;
+	z-index:8;
+	margin-top:-30px;
+	margin-left:420px;
+}
+.yami{
+	background:url(../images/yami.png);
+	width:402px;
+	height:408px;
+	position:absolute;
+	z-index:10;
+	margin-top:70px;
+	margin-left:620px;
+}
+.login{
+	position:absolute;
+	z-index:10;
+	width:162px;
+	height:39px;
+	margin-left:750px;
+	margin-top:5px;
+}
+.login a{
+	background:url(../images/login.png);
+}
+a.login1{
+	width:77px;
+	height:39px;
+	float:left;
+	margin-right:5px;
+	background-position:0 0;
+}
+a.login2{
+	width:77px;
+	height:39px;
+	float:left;
+	background-position:79px 0;
+}
+.buttonBg{
+	width:960px;
+	height:64px;
+	background:url(../images/buttonBg.png) no-repeat;
+	position:absolute;
+	z-index:10;
+	margin-top:-70px;
+}
+.menu{
+	width:960px;
+	height:54px;
+	position:absolute;
+	z-index:20;
+	margin-top:8px;
+	margin-left:15px;}
+.menu li a{
+	background-image:url(../images/button.jpg);
+	background-repeat:no-repeat;
+	width:155px;
+	height:54px;
+	float:left;}
+a.but1{
+	background-position:0 0;
+}
+a.but1:hover{
+	background-position:0 -54px;
+}
+a.but1Page{
+	background-position:0 -54px;}
+a.but2{
+	background-position:-155px 0;
+}
+a.but2:hover{
+	background-position:-155px -54px;
+}
+a.but2Page{
+	background-position:-155px -54px;
+}
+a.but3{
+	background-position:-310px 0;
+}
+a.but3:hover{
+	background-position:-310px -54px;
+}
+a.but3Page{
+	background-position:-310px -54px;
+}
+a.but4{
+	background-position:-465px 0;
+}
+a.but4:hover{
+	background-position:-465px -54px;
+}
+a.but4Page{
+	background-position:-465px -54px;
+}
+.game{
+	width:220px;
+	height:147px;
+	background:url(../images/game.png);
+	position:absolute;
+	z-index:30;
+	margin-top:-80px;
+	margin-left:640px;
+	}
+.slotBg{
+	width:960px;
+	height:554px;
+	background:url(../images/slotBg.png) no-repeat;
+	margin-top:-6px;
+}
+.slot{
+	width:573px;
+	height:540px;
+	background-image:url(../images/slot.png);
+	position:absolute;
+	z-index:30;
+	margin-left:190px;
+}
+.slotBar{
+	width:70px;
+	height:253px;
+	background-image:url(../images/slotBar.png);
+	background-repeat:no-repeat;
+	margin-left:695px;
+	margin-top:150px;
+	position:absolute;
+	z-index:50;
+}
+.slotBar:hover,
+.slotBar.animate{
+	background-position: -70px 0;
+}
+.slotBar:active{
+	background-position: -140px 0;
+}
+
+.slotGive{
+	background-image:url(../images/slotGive.png);
+	margin-top:220px;
+	margin-left:325px;
+	position:absolute;
+	z-index:30;
+	width:311px;
+	height:276px;
+}
+.slotBarBg{
+	position:absolute;
+	z-index:20;
+	width:311px;
+	height:276px;
+	background-image:url(../images/slotBarBg.jpg);
+	margin-top:220px;
+	margin-left:330px;
+}
+.copyright{
+	height:30px;
+	width:100%;
+	background:#c24040;
+	bottom:0;
+	float:left;
+}
