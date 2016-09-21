@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*******************************************************************************
+ * Version 1.0 Release 2015.6.9;
+ * Copyright 2015, "Keri"<Keri@dotmore.com.tw>. All rights reserved.
+ ******************************************************************************/
+.Finish {
+	padding: 50% 0;
+	font-weight: bold;
+	text-align: center;
+}
+.Finish a {
+	color:#00e4ff;
+	text-decoration: none;
+}
+.Finish a:hover, .Finish a:active {
+	text-decoration: underline;
+}
+.Finish > h1, .Finish > h2 {
+	text-indent: -999999px;
+	line-height: 0;
+	height: 0;
+}
+.Finish > .FinishTitle{
+	font-size:1.75em;/*28px/16px*/
+	margin: 0 0 0.536em;/*0 0 15px/28px*/
+}
+.Finish > p {
+	line-height:1.6;
+}
+.Finish > p > em {
+	font-style: normal;
+	display: block;
+	margin: 0 0 1em 0;
+}
+.Finish > p > a.Link {
+	font-size:1.333em;/*20px/15px*/
+	display: block;
+}
+/*如果使用者之視窗寬度>=768px，將會再載入這裡的 CSS。*/
+@media screen and (min-width: 768px) {
+	.Finish {
+		height: 118px;
+		padding: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -59px auto 0 -317px;
+	}
+	.Finish > .FinishTitle{
+		font-size:3em;/*48px/16px*/
+		margin: 0 0 0.3125em;/*0 0 15px/48px*/
+	}
+	.Finish > p {
+		font-size:1.25em;/*20px/16px*/
+	}
+	.Finish > p > a.Link {
+		font-size:1.3em;/*26px/20px*/
+	}
+}
+
+/*如果使用者之視窗寬度>=1024px，將會再載入這裡的 CSS。*/
+@media screen and (min-width: 1024px) {}

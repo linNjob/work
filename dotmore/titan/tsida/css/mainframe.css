@@ -1,0 +1,70 @@
+/*******************************************************************************
+ * Version 1.0 Release 2015.06.23;
+ * Copyright 2016, "brian"<brian@dotmore.com.tw>. All rights reserved.
+ ******************************************************************************/
+.Wrap{
+	width: 100%;
+}
+.Header, .Main, .Footer{
+	width: 100%;
+	display: inline-block;
+}
+.Inner{
+	width: 100%;
+	padding: 0 10px;
+	display: block;
+}
+.HeaderWrap{
+	position: relative;
+}
+/* @media (min-width: 768px) {
+	.Inner{
+		width: 748px;
+		padding: 0;
+		margin: auto;
+	}
+} */
+/* @media (min-width: 768px){
+	.Inner{
+		padding: 0;
+	}
+} */
+@media (min-width: 1200px) {
+	.Inner{
+		width: 1000px;
+		padding: 0;
+		margin: auto;
+	}
+}
+/* ------------------------------------------- 粉色圓形按鈕樣式 (可向右延伸)*/
+.BgGray{
+	background: #eee;
+	width: 100%;
+}
+.BgWhite{
+	background: #fbfbfb;
+	width: 100%;
+}
+/*會員選單開啟*/
+/*選單開啟*/
+/*頁首*/
+/*頁首 - logo*/
+/*slogan*/
+/*登入區-未登入*/
+/*登入區-登入後隱藏*/
+/*登入區-未登入-項目*/
+/*登入區-未登入-項目-連結*/
+/*登入區-已登入*/
+/*icon*/
+/*訊息泡泡*/
+/*會員選單*/
+/*開啟會員選單*/
+/*會員選單-標題*/
+/*登入區-已登入*/
+/*會員選單*/
+/*會員選單-標題*/
+/*content*/
+/*麵包屑*/
+/*頁尾*/
+/*頁尾選單*/
+/*copyright*/

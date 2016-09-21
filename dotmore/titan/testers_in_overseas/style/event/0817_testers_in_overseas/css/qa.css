@@ -1,0 +1,260 @@
+@charset "utf-8";
+/*******************************************************************************
+ * Version 1.0 Release 2015.6.9;
+ * Copyright 2015, "Keri"<Keri@dotmore.com.tw>. All rights reserved.
+ ******************************************************************************/
+.Fade, .Question > form > .BtnBox {
+	opacity:0.25;
+}
+.Fade.Active, .Question > form > .BtnBox.Active {
+	opacity:1;
+}
+.Fade {
+	padding:5em 0;
+}
+.Fade > div {}
+input[type=text], input[type=email], textarea {
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.4);
+	color:#00c5dc;
+	border:none;
+}
+/**/
+.Questionnaire {
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 0 auto 50%;
+}
+.Description {}
+.Description > div > h1, .Question > h2, .Question > form > .Description > div > h3 {
+	text-indent: -999999px;
+	line-height: 0;
+	height: 0;
+}
+.Description > div > p {
+	font-size: 0.9375em;/*15px/16px*/
+	margin: 0 0 1em;/*0 0 15px/15px*/
+}
+.Description > div > p.Factor {
+	font-size: 1.2em;/*18px/15px*/
+	margin: 0 0 0.833em;/*0 0 15px/18px*/
+}
+.Description > div > p.Dec{
+	font-size: 2em;/*18px/15px*/
+	margin: 0 0 0.833em;/*0 0 15px/18px*/
+	line-height: 1.2;
+}
+.Question form > fieldset.Panel > .PanelBody .Title {
+	font-size: 1.25em;/*20px/16px*/
+	margin: 0 0 0.5em 30px;/*0 0 10px/20px 30px*/
+}
+.Question form > fieldset.Panel > .PanelBody .Title > span {
+	margin: 0 0 0 -30px;
+}
+.Question form > fieldset.Panel > .PanelBody .Area{
+	margin: 0 0 0.5em 1.875em;
+}
+.Question form > fieldset.Panel > .PanelBody > div > .Title {
+	margin: 0 0 0.5em;/*0 0 10px/20px*/
+}
+.Question form > fieldset.Panel > .PanelBody > div > .Item {
+	padding: 8px 0;
+}
+.Question form > fieldset.Panel > .PanelBody div.RemindInfo{
+	margin: 0 0 0 30px;
+	color: #89f2fe;
+	font-size: 1em;
+}
+
+.Question form > fieldset.Panel > .PanelBody div.Error {
+	margin-left: 1.875em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.Question form > fieldset.Panel > .PanelBody .Error > span {
+	background: #f00;
+	color: #fff;
+}
+.Question form > fieldset.Panel > .PanelBody > .Item > div > ul > li > .OtherInfo {
+	display: none;
+}
+.Question form > fieldset.Panel > .PanelBody .Remind {
+	margin: 0 0 0 30px;
+}
+.Question form > fieldset.Panel > .PanelBody .Remind > span {
+	font-size: 0.8125em;/*13px/16px*/
+	color: #fff;
+	background: #f00;
+	padding: 0 6px;
+	display: none;
+}
+.Question form > .Description > div > .Intro {
+	margin: 0 0 1.25em;/*0 0 20px/16px*/
+}
+.Question form > fieldset.Panel > .PanelBody > div > div > .Other {
+	margin: 0 0 0 30px;
+}
+.Question form > fieldset.Panel > .PanelBody > div > div > .Next{
+	margin: 0 0 0 30px;
+}
+
+.Question form > .BtnBox {
+	margin: -80px 0 0 30px;
+}
+/*選擇列*/
+.List {
+	padding: 0.25em 0 0.25em 1.875em;/*4px/16px 0 4px/16px 30px/16px*/
+}
+.List > li {
+	width: 100%;
+	position: relative;
+	display: block;
+	padding: 0.375em 0;/*6px/16px 0*/
+}
+.List > li input[type=checkbox],
+.List > li input[type=radio] {
+	position: absolute;
+	z-index: -1;
+	display: none;
+}
+.List > li label {
+	display: block;
+	cursor: pointer;
+	padding: 0.6em 3%;
+	border: 1px solid #FFF;
+}
+.List > li input[type=checkbox]:checked + label,
+.List > li input[type=radio]:checked + label {
+	color: #00c5dc;
+	border: 2px solid #00c5dc;
+	background: #fff url("../images/icon/check.svg") no-repeat 96% center;
+}
+/*回答問題計算*/
+.TargetBar > .TargetPrompt {
+	font-size: 0.8125em;/*13px/16px*/
+	color:#333;
+}
+.TargetBar > .TargetPrompt > span {
+	font-weight: bold;
+	margin: 0 5px;
+}
+.TargetBar > .TargetPrompt > span:first-child {
+	font-size:1.385em;/*18px/13px*/
+	color:#00c5dc;
+}
+.TargetBar > .Target {
+	display: none;
+}
+/*如果使用者之視窗寬度>=768px，將會再載入這裡的 CSS。*/
+@media screen and (min-width: 768px) {
+	.Fade {
+	padding:0 0 5em 0;
+	}
+	.Questionnaire {
+		padding: 0 0 1.875em 0;
+		margin: 10em auto 50%;
+	}
+	.Description > div > p {
+		font-size: 1.25em;/*20px/16px*/
+		margin: 0 0 0.75em;/*0 0 15px/20px*/
+	}
+	.Description > div > p.Factor {
+		font-size: 1.625em;/*26px/16px*/
+		margin: 0 0 0.577em;/*0 0 15px/26px*/
+	}
+	.Description > div > p.Factor > span {
+		display: block;
+	}
+	.Question form > fieldset.Panel > .PanelBody .Title {
+		font-size: 1.875em;/*30px/16px*/
+		line-height: 1.2;
+		margin: 0 0 0.667em 70px;/*0 0 20px/30px*/
+	}
+	.Question form > fieldset.Panel > .PanelBody .Title > span {
+		font-size: 1.6em;/*48px/30px*/
+		margin: 0 0 0 -70px;
+	}
+	.Question form > fieldset.Panel > .PanelBody > div > .Title {
+		margin: 0 0 0.667em;/*0 0 20px/30px*/
+	}
+	.Question form > fieldset.Panel > .PanelBody > div > .Item {
+		padding: 10px 0;
+	}
+	.Question form > fieldset.Panel > .PanelBody > div > p {
+		font-size: 1.25em;/*20px/16px*/
+	}
+	.Question form > fieldset.Panel > .PanelBody .Remind {
+		margin: 0 0 0 70px;
+	}
+	.Question form > fieldset.Panel > .PanelBody .Remind > span {
+		font-size: 0.875em;/*14px/16px*/
+		padding: 0 3.5%;
+	}
+	.Question form > fieldset.Panel > .PanelBody > div > div > .Other,
+	.Question form > fieldset.Panel > .PanelBody > div > div > .Next {
+		margin: 10px 0 0 70px;
+	}
+	.Question form > .Description > div > .Intro {
+		font-size: 1.25em;/*20px/16px*/
+		margin: 0 0 1em;/*0 0 20px/20px*/
+	}
+	.Question form > .BtnBox {
+		margin: -75px 0 0 70px;/*50px/16px 0 0*/
+	}
+	.Question form > fieldset.Panel > .PanelBody .Area,
+	.Question form > fieldset.Panel > .PanelBody div.RemindInfo,
+	.Question form > fieldset.Panel > .PanelBody div.Error {
+		margin-left: 4.375em;/*70/16*/
+	}
+	/*選擇列*/
+	.List {
+		padding: 0.25em 0 0 4.375em;/*4px/16px 0 0 70px/16px*/
+	}
+	.List > li {
+		padding: 0.3em 0;/*6px/16px 0*/
+	}
+	.List > li label {
+		font-size: 1.25em;/*20px/16px*/
+		padding: 0.5em 3%;/*10px/16px 3%*/
+	}
+	.List > li input[type=checkbox]:checked + label,
+	.List > li input[type=radio]:checked + label {
+		background: #fff url("../images/icon/check.svg") no-repeat 96% center;
+		background-size: 30px 30px;
+	}
+	.Question form > .BtnBox > .Btn.M {
+		width: 130px;
+	}
+	/*回答問題計算*/
+	.TargetBar > .TargetPrompt {
+		font-size: 1em;/*16px/16px*/
+	}
+	.TargetBar > .TargetPrompt > span:last-child {
+		font-size:1.875em;/*30px/16px*/
+	}
+	.TargetBar > .Target {
+		display: block;
+		margin: 5px 0 0;
+	}
+}
+/*如果使用者之視窗寬度>=1024px，將會再載入這裡的 CSS。*/
+@media screen and (min-width: 1024px) {
+	.Questionnaire {
+		margin: 10em auto 25%;
+	}
+	.TargetBar > .TargetPrompt {
+		float: left;
+		margin: 0 22px 0 0;
+	}
+	.TargetBar > .Target {
+		margin: 16px 0 0;
+	}
+	.TargetBar:after {
+		content: " ";
+		display: block;
+		clear: both;
+		line-height: 0;
+		height: 0;
+		visibility: hidden;
+	}
+}

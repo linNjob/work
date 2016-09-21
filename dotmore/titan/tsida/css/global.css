@@ -1,0 +1,168 @@
+/*******************************************************************************
+ * Version 1.0 Release 2016.06.23;
+ * Copyright 2016, "brian"<brian@dotmore.com.tw>. All rights reserved.
+ ******************************************************************************/
+/* Global Style & Reset Start */
+
+/* ============================================ Rest Start */
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, select, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+form, fieldset, h1, h2, h3, h4, h5, h6, p {
+	margin:0;
+	padding:0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+img {
+	border: 0;
+	margin: 0;
+	vertical-align: middle;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+/*項目清單-取消項目符號(注意:當真正在使用預設項目清單時，請之後覆寫)*/
+ul,
+ul > li,
+ol,
+ol > li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+/*Icon-i元素目前專給icon使用*/
+i {
+}
+/*去除focus outline-chrome預設*/
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline:0;
+}
+
+table {
+	max-width: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------------------------------- Button & form 預設樣式清除*/
+form fieldset{
+	border: 0;
+}
+form legend{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	margin: 0;
+}
+button{
+	background: none;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+button:hover{
+	cursor: pointer;
+}
+input{
+	letter-spacing: .5px;
+}
+/* ============================================ Rest End */
+/* ============================================ Base style Start */
+
+body, input {
+	font: 1em/1.5 Helvetica,"蘋果儷中黑","微軟正黑體",Verdana,Arial,sans-serif,"新細明體";
+	color: #555;
+	background: #fff;
+}
+.FooterLine{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+/*文字連結*/
+a,
+.LinkText{
+	color: #de6e00;
+	cursor: pointer;
+	text-decoration: none;
+}
+/*文字連結-滑過*/
+a:hover,
+a:active,
+.LinkText:hover,
+.LinkText:active {
+	color: #de6e00;
+	text-decoration: underline;
+}
+/*強調重點*/
+strong {
+	font-weight: normal;
+}
+em{
+	font-style: normal;
+}
+/*強調色*/
+.Highlight{
+	color: #45c8ab;
+}
+/* ============================================ Base style End */
+/* ============================================ Iconmoon Start */
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?1qs6a3');
+    src:    url('../fonts/icomoon.eot?1qs6a3#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?1qs6a3') format('truetype'),
+        url('../fonts/icomoon.woff?1qs6a3') format('woff'),
+        url('../fonts/icomoon.svg?1qs6a3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map:before {
+    content: "\e900";
+}
+.icon-member:before {
+    content: "\e901";
+}
+.icon-money:before {
+    content: "\e902";
+}
+.icon-time:before {
+    content: "\e903";
+}
+/* ============================================ Iconmoon End */

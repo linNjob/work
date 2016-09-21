@@ -1,0 +1,89 @@
+@charset "utf-8";
+/*******************************************************************************
+ * Version 1.0 Release 2015.6.9;
+ * Copyright 2015, "Keri"<Keri@dotmore.com.tw>. All rights reserved.
+ ******************************************************************************/
+.Wrapper {
+	width: 100%;
+	min-height:100%;
+	padding: 0.9375em 4.6875%;/*15px/16px 15px/320px*100*/
+}
+.Header {
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+.Header:after {
+	content: " ";
+	display: block;
+	clear: both;
+	line-height: 0;
+	height: 0;
+	visibility: hidden;
+}
+.Header .Logo {
+	text-align: center;
+}
+.Header .Logo > a {
+	width:200px;
+	height:30px;
+	position: relative;
+	display: inline-block;
+	text-indent: -999999px;
+}
+.Header .Logo > a > img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.Footer {
+	text-align: center;
+	display: none;
+}
+.Underlay {
+	background: url("../images/background/bg_content_mobile.jpg") no-repeat center bottom;
+	background-size: cover;
+	position:fixed;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index:-1;
+}
+
+/*如果使用者之視窗寬度>=768px，將會再載入這裡的 CSS。*/
+@media screen and (min-width: 768px) {
+	.Wrapper {
+		padding: 1.875em 3.90625%;/*30px/16px */
+	}
+	.Header {
+		width: 92.075%;
+		position: fixed;
+		z-index: 10;
+	}
+	.Header .Logo > a {
+		width:300px;
+		height:47px;
+	}
+	.Content {
+		width: 680px;
+		margin: 0 auto;
+	}
+	.Underlay {
+		background: url("../images/background/bg_content.jpg") no-repeat center bottom;
+		background-size: cover;
+	}
+}
+/*如果使用者之視窗寬度>=1024px，將會再載入這裡的 CSS。*/
+@media screen and (min-width: 1024px) {
+	.Wrapper {
+		padding: 1.875em 30px;/*30px/16px 30pz/1024pz*100*/
+	}
+	.Header .Logo {
+		float: left;
+		margin-left: 20px;
+	}
+}

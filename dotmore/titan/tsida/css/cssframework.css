@@ -1,0 +1,545 @@
+/* ============================================ Header Start */
+.Header{
+	background: url('../images/header_bg.jpg') no-repeat center top;
+	height: 515px;
+	position: relative;
+}
+.Logo{
+	width: 100%;
+	height: 50px;
+	margin-top: 40px;
+	text-align: center;
+}
+.Logo img{
+	max-width: 100px;
+	padding-left: 0px;
+}
+.Header .LogoPc{
+	display: none;
+}
+.Header .LogoMobile{
+	display: block;
+}
+.Header .Heading{
+	width: 300px;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	margin-left: -150px;
+	margin-top: -100px;
+	text-align: center;
+}
+.Header .Heading > h1{
+	display: none;
+}
+.Header .Heading span{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.Header .Heading span:nth-child(1){
+	font-size: 3.625em; /* 90 */
+	line-height: 1.388em; /* 125/90 */
+}
+.Header .Heading span:nth-child(2){
+	font-size: 5.5em; /* 120 */
+	line-height: 1.041em; /* 125/120 */
+}
+.Header .Heading span:nth-child(3){
+	font-size: 1.5em; /* 24 */
+	line-height: 1em; /* 24/24 */
+	font-weight: bold;
+}
+.Location,
+.Header .Time{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+}
+.Location{
+	width: 140px;
+	margin-top: 150px;
+	margin-left: -150px;
+}
+.Header .Time{
+	width: 140px;
+	margin-top: 150px;
+	margin-left: 15px;
+}
+.Location span,
+.Header .Time span{
+	width: 100%;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: bold;
+}
+.Location i:before,
+.Header .Time i:before{
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: #de6e00;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+@media (min-width: 960px) {
+	.Logo{
+		text-align: left;
+	}
+	.Logo{
+		padding-left: 10px;
+	}
+	.Header .LogoPc{
+		display: block;
+	}
+	.Header .LogoMobile{
+		display: none;
+	}
+	.Header .Heading{
+		width: 360px;
+		margin-left: -180px;
+		margin-top: -120px;
+	}
+	.Header .Heading span:nth-child(1){
+		font-size: 5.625em; /* 90 */
+		line-height: 1.388em; /* 125/90 */
+	}
+	.Header .Heading span:nth-child(2){
+		font-size: 7.5em; /* 120 */
+		line-height: 1.041em; /* 125/120 */
+	}
+	.Header .Heading span:nth-child(3){
+		font-size: 1.5em; /* 24 */
+		line-height: 1em; /* 24/24 */
+	}
+	.Location{
+		width: 140px;
+		margin-top: 130px;
+		margin-left: -255px;
+	}
+	.Header .Time{
+		width: 140px;
+		margin-top: 130px;
+		margin-left: 120px;
+	}
+}
+/* ============================================ Main Start */
+.Intro{
+	display: block;
+}
+.HeadingBulo,
+.HeadOrange{
+	display: inline-block;
+	width: 100%;
+}
+.HeadingBulo h2{
+	width: 200px;
+	font-size: 1.375em;
+	font-weight: bold;
+	color: #fff;
+	background: #002a79;
+	margin: auto;
+	padding: 5px 10px;
+	text-align: center;
+}
+.HeadOrange h2{
+	width: 200px;
+	font-size: 1.375em;
+	font-weight: bold;
+	color: #fff;
+	background: #de6e00;
+	margin: auto;
+	padding: 5px 10px;
+	text-align: center;
+}
+.Desc{
+	display: inline-block;
+	margin: 60px 0 70px 0;
+	font-size: 1em;
+	line-height: 1.875em;
+}
+.Invite > .Desc > p{
+	margin: 25px 0;
+}
+/* ============================================ Main Course Start */
+.Day1, .Day2{
+	display: inline-block;
+	width: 100%;
+	margin: 30px 0 15px 0;
+}
+.CourseTime{
+	width: 100%;
+	float: left;
+	color: #fff;
+	text-align: center;
+}
+.CourseTime > .TimeBox{
+	border-bottom: solid 3px #de6e0d;
+}
+.CourseTime > .TimeBox > .Day,
+.CourseTime > .TimeBox > .Week{
+	display: inline-block;
+}
+.CourseTime > .TimeBox > .Day{
+	font-size: 1.875em; /*30/16*/
+	background: none;
+	color: #de6e0d;
+	line-height: 55px;
+}
+.CourseTime > .TimeBox > .Day > span{
+	padding-left: 15px;
+	position: relative;
+	display: inline-block;
+}
+.CourseTime > .TimeBox > .Day > span:before{
+	content: '/';
+	display: block;
+	font-size: 0.666em;/* 20/30 */
+	display: inline-block;
+	position: absolute;
+    top: 1px;
+    left: 5px;
+	font-weight: bold;
+}
+.CourseTime > .TimeBox > .Week{
+	color: #de6e00;
+	border: 0;
+	font-size: 1.25em;
+}
+.CourseTime > .Time{
+	color: #de6e00;
+	font-size: 0.9375em;
+	text-align: center;
+	margin: 5px 0;
+	display: none;
+}
+.CourseTable{
+	width: 100%;
+	float: left;
+}
+@media (min-width: 768px){
+	.CourseTime > .TimeBox{
+		border-bottom: 0;
+	}
+	.CourseTime{
+		width: 12%;
+		float: left;
+		color: #fff;
+		text-align: center;
+	}
+	.CourseTime > .Time{
+		display: block;
+	}
+	.CourseTime > .TimeBox > .Day,
+	.CourseTime > .TimeBox > .Week{
+		display: block;
+	}
+	.CourseTime > .TimeBox > .Day{
+		font-size: 1.875em; /*30/16*/
+		background: #de6e00;
+		color: #fff;
+	}
+	.CourseTime > .TimeBox > .Week{
+		border: solid 5px #de6e00;
+		border-top: 0;
+		line-height: 3em;
+	}
+	.CourseTable{
+		width: calc(88% - 40px);
+		margin-left: 40px;
+		float: left;
+	}
+}
+/* -------------------------------------------- CourseTable Start */
+.CourseTable > li{
+	display: table;
+	width: 100%;
+	padding: 7px 0;
+}
+.CourseTable > li:nth-child(even){
+	background: #fff;
+}
+.CourseTable > li ul{
+	display: table;
+	width: 100%;
+}
+.CourseTable > li li{
+	float: left;
+	padding: 0 7px;
+}
+.CourseTable > li:nth-child(1) li{
+	color: #de6e00;
+}
+.CourseTable > li li:nth-child(1){
+	width: 50%;
+}
+.CourseTable > li li:nth-child(2){
+	width: 50%;
+}
+.CourseTable > li li:nth-child(3){
+	width: 100%;
+}
+.CourseTable > li:nth-child(1) li:nth-child(3){
+	display: none;
+}
+.CourseTable > li li > span{
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 8px;
+}
+@media (min-width: 768px){
+	.CourseTable > li li:nth-child(1){
+		width: 25%;
+	}
+	.CourseTable > li li:nth-child(2){
+		width: 20%;
+	}
+	.CourseTable > li li:nth-child(3){
+		width: 55%;
+	}
+	.CourseTable > li:nth-child(1) li:nth-child(3){
+		display: block;
+	}
+}
+/* ============================================ Main 講者介紹 Start */
+.Speaker{
+	display: inline-block;
+	width: 100%;
+}
+.Speaker > li{
+	width: calc(100% - 30px);
+	margin: 40px 15px;
+	height: auto;
+	float: left;
+}
+.Speaker > li > .SpeakerImg{
+	padding: 10px 0;
+	text-align: center;
+}
+.Speaker > li > .SpeakerImg > img{
+	width: 134px;
+	border-radius: 50%;
+	margin: auto;
+	border: solid 2px #d5d5d5;
+}
+.Speaker > li > .Info > .SpeakerName{
+	color: #000;
+	text-align: center;
+	font-size: 2.5em;
+}
+.Speaker > li > .Info > .SpeakerHeading{
+	text-align: center;
+	font-size: 0.8125em;
+	font-weight: bold;
+	color: #000;
+	line-height: 1.3846em;
+	margin: 5px 0 10px 0;
+	border-bottom: solid 1px #000;
+	padding-bottom: 5px;
+}
+.Speaker > li > .Info > .SpeakerHeading > span{
+	width: 100%;
+	display: inline-block;
+}
+.Speaker > li > .Info > .SpeakerDesc{
+	font-size: 0.875em;
+	color: #555;
+}
+@media (min-width: 425px){
+	.Speaker > li{
+		width: calc(100%/2 - 30px);
+		margin: 40px 15px;
+		height: 540px;
+	}
+}
+@media (min-width: 768px){
+	.Speaker > li{
+		height: 410px;
+	}
+	.Speaker > li > .SpeakerImg{
+		text-align: left;
+	}
+	.Speaker > li > .Info > .SpeakerName,
+	.Speaker > li > .Info > .SpeakerHeading{
+		text-align: left;
+	}
+}
+@media (min-width: 960px){
+	.Speaker > li{
+		width: calc(100%/4 - 30px);
+		margin: 40px 15px;
+		height: 515px;
+	}
+}
+/* ============================================ Main Join Start */
+.Join{
+	display: inline-block;
+	margin: 50px 0 0 0;
+}
+.Join i{
+	font-size: 3em;
+	color: #002a79;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+.Join > li{
+	position: relative;
+	float: left;
+}
+.Join > li{
+	width: 100%;
+	float: left;
+}
+.Join > li > .Heading,
+.Join > li > .Info{
+	text-align: center;
+}
+.Join > li > .Info{
+	margin-top: 15px;
+}
+.Join > li > .Heading{
+	font-size: 1.125em;
+	font-weight: bold;
+}
+.Join > li:nth-child(1) > ul{
+	color: #de6e00;
+	font-size: 1.125em;
+	font-weight: bold;
+}
+.Join > li:nth-child(1) > .Info li span{
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;
+}
+.Join > li:nth-child(1) > .Info li span:nth-child(1){
+	color: #de6e00;
+}
+.Join > li:nth-child(1){
+	height: 230px;
+}
+.Join > li:nth-child(2),
+.Join > li:nth-child(3),
+.Join > li:nth-child(4){
+	height: 180px;
+}
+.Join > li:nth-child(3){
+	height: 300px;
+}
+@media (min-width: 768px){
+	.Join i{
+		font-size: 3em;
+		color: #002a79;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: initial;
+		text-align: left;
+	}
+	.Join > li:nth-child(1),
+	.Join > li:nth-child(3){
+		width: 60%;
+		float: left;
+	}
+	.Join > li:nth-child(2),
+	.Join > li:nth-child(4){
+		width: 40%;
+		float: left;
+	}
+	.Join > li:nth-child(1),
+	.Join > li:nth-child(2),
+	.Join > li:nth-child(3),
+	.Join > li:nth-child(4){
+		height: 200px;
+	}
+	.Join > li > .Heading,
+	.Join > li > .Info{
+		text-align: left;
+		margin-left: 70px;
+		margin-right: 30px;
+	}
+}
+@media (min-width: 960px){
+	.Join > li:nth-child(1),
+	.Join > li:nth-child(2),
+	.Join > li:nth-child(3),
+	.Join > li:nth-child(4){
+		height: 200px;
+	}
+	.Join > li:nth-child(1) > .Info li span{
+		display: inline-block;
+		width: auto;
+	}
+}
+/* ============================================ Footer Start */
+.Footer{
+	background: #002a79;
+	margin-bottom: 73px;
+}
+.Copyright{
+	font-size: 1em;
+	color: #fff;
+	margin: auto;
+	height: 80px;
+	display: table;
+}
+.Copyright > div{
+	vertical-align: middle;
+	display: table-cell;
+}
+.Copyright > div span{
+	display: inline-block;
+}
+.Copyright > div > span > img{
+	width: 50px;
+	height: auto;
+	margin-right: 5px;
+	margin-top: -3px;
+}
+@media (min-width: 768px){
+	.Footer{
+		margin-bottom: 123px;
+	}	
+}
+/* -------------------------------------------- SignUp Start */
+.SignUp{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	bottom: 0;
+	background: rgba(0, 0, 0, .75);
+}
+
+.Btn{
+	width: 200px;
+	height: 50px;
+	font-size: 1.5em;
+	color: #fff;
+	background: #de6e00;
+	text-align: center;
+	border-radius: 5px;
+	margin: auto;
+	line-height: 2.1em;
+}
+.Btn:hover{
+	color: #de6e00;
+	background: #fbfbfb;
+	text-decoration: none;
+}
+@media (min-width: 768px){
+	.SignUp{
+		height: 130px;
+	}
+	.Btn{
+		height: 60px;
+		line-height: 2.5em;
+	}	
+}

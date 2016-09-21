@@ -1,0 +1,217 @@
+@charset "utf-8";
+/*******************************************************************************
+ * Version 1.0 Release 2015.6.12;
+ * Copyright 2015, "Keri"<Keri@dotmore.com.tw>. All rights reserved.
+ ******************************************************************************/
+/* LightBoxFrame*/
+.LightBoxFrameBackground {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	z-index: 1000;
+	background: #000;
+	background: rgba(0,0,0,0.6);
+	background: transparent\0/;
+	zoom: 1;
+	*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	display: none;
+}
+.LightBoxFrameBackground.Show{
+	display: block;
+}
+/* LightBox*/
+.LightBox {
+	color: #555555;
+	background: rgb(255,255,255);
+	background: transparent\0/;
+	width: 100%;
+	padding: 20px;
+	position: fixed;
+	left: 0;
+	z-index: 1002;
+	zoom: 1;
+	*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff)";
+	display: none;
+}
+.LightBox.Show{
+	display: block;
+}
+/*LoadingBox*/
+.LoadingBox {
+	width: 100%;
+	padding: 0;
+	background: transparent;
+	top: 50%;
+	left: 50%;
+	margin: -44px 0 0 -44px;
+}
+.LoadingBox > .LoadingText{
+	color: #fff;
+	text-indent: 6px;
+}
+/*Loading Circles*/
+#floatingCirclesG {
+	position:relative;
+	width:88px;
+	height:88px;
+	-moz-transform:scale(0.6);
+	-webkit-transform:scale(0.6);
+	-ms-transform:scale(0.6);
+	-o-transform:scale(0.6);
+	transform:scale(0.6);
+}
+.f_circleG {
+	position:absolute;
+	background-color:#FFFFFF;
+	height:16px;
+	width:16px;
+	-moz-border-radius:8px;
+	-moz-animation-name:f_fadeG;
+	-moz-animation-duration:0.64s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:linear;
+	-webkit-border-radius:8px;
+	-webkit-animation-name:f_fadeG;
+	-webkit-animation-duration:0.64s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:linear;
+	-ms-border-radius:8px;
+	-ms-animation-name:f_fadeG;
+	-ms-animation-duration:0.64s;
+	-ms-animation-iteration-count:infinite;
+	-ms-animation-direction:linear;
+	-o-border-radius:8px;
+	-o-animation-name:f_fadeG;
+	-o-animation-duration:0.64s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:linear;
+	border-radius:8px;
+	animation-name:f_fadeG;
+	animation-duration:0.64s;
+	animation-iteration-count:infinite;
+	animation-direction:linear;
+}
+#frotateG_01 {
+	left:0;
+	top:36px;
+	-moz-animation-delay:0.24s;
+	-webkit-animation-delay:0.24s;
+	-ms-animation-delay:0.24s;
+	-o-animation-delay:0.24s;
+	animation-delay:0.24s;
+}
+#frotateG_02 {
+	left:10px;
+	top:10px;
+	-moz-animation-delay:0.32s;
+	-webkit-animation-delay:0.32s;
+	-ms-animation-delay:0.32s;
+	-o-animation-delay:0.32s;
+	animation-delay:0.32s;
+}
+#frotateG_03 {
+	left:36px;
+	top:0;
+	-moz-animation-delay:0.4s;
+	-webkit-animation-delay:0.4s;
+	-ms-animation-delay:0.4s;
+	-o-animation-delay:0.4s;
+	animation-delay:0.4s;
+}
+#frotateG_04 {
+	right:10px;
+	top:10px;
+	-moz-animation-delay:0.48s;
+	-webkit-animation-delay:0.48s;
+	-ms-animation-delay:0.48s;
+	-o-animation-delay:0.48s;
+	animation-delay:0.48s;
+}
+#frotateG_05 {
+	right:0;
+	top:36px;
+	-moz-animation-delay:0.56s;
+	-webkit-animation-delay:0.56s;
+	-ms-animation-delay:0.56s;
+	-o-animation-delay:0.56s;
+	animation-delay:0.56s;
+}
+#frotateG_06 {
+	right:10px;
+	bottom:10px;
+	-moz-animation-delay:0.64s;
+	-webkit-animation-delay:0.64s;
+	-ms-animation-delay:0.64s;
+	-o-animation-delay:0.64s;
+	animation-delay:0.64s;
+}
+#frotateG_07 {
+	left:36px;
+	bottom:0;
+	-moz-animation-delay:0.72s;
+	-webkit-animation-delay:0.72s;
+	-ms-animation-delay:0.72s;
+	-o-animation-delay:0.72s;
+	animation-delay:0.72s;
+}
+#frotateG_08 {
+	left:10px;
+	bottom:10px;
+	-moz-animation-delay:0.8s;
+	-webkit-animation-delay:0.8s;
+	-ms-animation-delay:0.8s;
+	-o-animation-delay:0.8s;
+	animation-delay:0.8s;
+}
+@-moz-keyframes f_fadeG {
+	0% {
+		background-color:#999999
+	}
+	100% {
+		background-color:#FFFFFF
+	}
+}
+
+@-webkit-keyframes f_fadeG {
+	0% {
+		background-color:#999999
+	}
+	100% {
+		background-color:#FFFFFF
+	}
+}
+
+@-ms-keyframes f_fadeG {
+	0% {
+		background-color:#999999
+	}
+	100% {
+		background-color:#FFFFFF
+	}
+}
+
+@-o-keyframes f_fadeG {
+	0% {
+		background-color:#999999
+	}
+	100% {
+		background-color:#FFFFFF
+	}
+}
+
+@keyframes f_fadeG {
+	0% {
+		background-color:#999999
+	}
+	100% {
+		background-color:#FFFFFF
+	}
+}
+/*如果使用者之視窗寬度>=768px，將會再載入這裡的 CSS。*/
+@media screen and (min-width: 768px) {}
+/*如果使用者之視窗寬度>=1024px，將會再載入這裡的 CSS。*/
+@media screen and (min-width: 1024px) {}
