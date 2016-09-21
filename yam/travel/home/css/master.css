@@ -1,0 +1,32 @@
+body{
+	font-family:Arial,"微軟正黑體", "Microsoft JhengHei","Helvetica Neue,Helvetica",sans-serif;}
+#wrap{
+	width:960px; 
+	margin:0 auto;}
+#header{
+	width:960px;
+	float:left;}
+.article{
+	float:left;
+	width:630px;}
+#main_banner{
+	width:960px;
+	height:400px;
+	float:left;
+	background-color:#fce9b4;}
+.articel_wrap{
+	width:630px;
+	float:left;
+	margin-bottom:15px;}
+#aside{
+	margin-left:10px;
+	float:left;
+	width:320px;}
+#footer{
+	width:960px;
+	float:left;}
+/*-----------------------------影藏文字語法()-----------------------------*/
+#menu li.menubar1 a.title, #menu li.menubar2 a.title, #menu li.menubar3 a.title, #menu li.menubar4 a.title, #menu li.menubar5 a.title, #menu li.menubar6 a.title, #menu li.menubar7 a.title, #menu li.menubar8 a.title{
+	text-indent:-99999px; 
+	white-space:nowrap; 
+	line-height:0; }
