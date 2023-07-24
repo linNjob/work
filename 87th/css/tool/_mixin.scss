@@ -1,0 +1,44 @@
+
+// RWD size ============================= (IE9↑)
+@mixin rwd($rwdSize){
+  //手機
+  @if ($rwdSize == 320)	{@media screen and (min-width: 320px){@content;}}
+  //平板
+  @if ($rwdSize == 480)	{@media screen and (min-width: 480px){@content;}}
+  @if ($rwdSize == 600)	{@media screen and (min-width: 600px){@content;}}
+  @if ($rwdSize == 768)	{@media screen and (min-width: 768px){@content;}}
+  @if ($rwdSize == 800)	{@media screen and (min-width: 800px){@content;}}
+  
+  // 直向
+  @if ($rwdSize == 1023L)	{@media screen and (max-width: 1023px) and (orientation: landscape){@content;}}
+  
+  //電腦
+  @if ($rwdSize == 1024)	{@media screen and (min-width: 1024px){@content;}}
+  @if ($rwdSize == 1280)	{@media screen and (min-width: 1280px){@content;}}
+  @if ($rwdSize == 1366)	{@media screen and (min-width: 1366px){@content;}}
+  
+
+  // 橫向
+  @if ($rwdSize == 1024S)	{@media screen and (min-width: 1024px) and (orientation: portrait){@content;}}
+  @if ($rwdSize == 1280S)	{@media screen and (min-width: 1280px) and (orientation: portrait){@content;}}
+  @if ($rwdSize == 1366S)	{@media screen and (min-width: 1366px) and (orientation: portrait){@content;}}
+}
+  // 使用方式
+  // .box{
+  // 	    @include rwd(970){
+  //          background: #595757;
+  //      }
+  //      @include rwd(1200){
+  //          background: #000;
+  //      }
+  //  }
+  
+  // rem 自動計算 =============================
+  @mixin fzrem ($px){ 
+    font-size: $px * 1px;
+    font-size: $px / $browser-size * 1rem;
+  }
+  // 備註：數字不得使用單位(px)
+  // 使用方式
+  // @include fzrem (15);
+  

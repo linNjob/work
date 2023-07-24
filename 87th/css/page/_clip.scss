@@ -1,0 +1,170 @@
+main{
+  article{
+    .clip-wrap{
+      .clip-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+        @include rwd(1024){
+          margin-top: 100px;
+          margin-bottom: 30px;
+        }
+        .title{
+          @include fzrem (27);
+          font-weight: bold;
+          background: radial-gradient(127.65% 1437.65% at 34.19% 35%, #44A4FD 0%, #41D5E7 39.58%, #41D5E7 64.58%, #44A4FD 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+        }
+        img{
+          margin-left: 8px;
+        }
+      }
+      .video-container { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        padding-top: 30px; 
+        height: 0; 
+        overflow: hidden; 
+        iframe, 
+        object, 
+        embed { 
+          position: absolute; 
+          top: 0; 
+          left: 0; 
+          width: 100%; 
+          height: 100%;
+        }
+      } 
+      .video-table{
+        margin: 30px 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include rwd(1024){
+          margin: 50px 0;
+        }
+        li{
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+          conic-gradient(from 180deg at 50% 50%, #05B7EE 0deg, #005EA4 101.25deg, #05B7EE 198.75deg, #005EA4 288.75deg, #05B7EE 359.96deg, #05B7EE 360deg);
+          border-radius: 8px;
+          height: 50px;
+          box-sizing: border-box;
+          width: calc((100% - 20px) / 3);
+          margin-left: 10px;
+          color: #fff;
+          
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: #fff;
+          height: 50px;
+          @include fzrem (14);
+          line-height: 17px;
+          text-align: center;
+          word-break: keep-all;
+          cursor: pointer;
+          span{
+            display: block;
+          }
+          &:first-child{
+            margin-left: 0;
+          }
+          
+          a{
+          }
+          &.active{
+            background: conic-gradient(from 180deg at 50% 50%, #05B7EE 0deg, #005EA4 101.25deg, #05B7EE 198.75deg, #005EA4 288.75deg, #05B7EE 359.96deg, #05B7EE 360deg),
+            linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16));          
+            border: 3px solid #3aaae3;
+            box-shadow: 0px 0px 5px #333 inset;
+            box-sizing: border-box;
+            height: 50px;
+            // height: 44px;
+            a{
+            }
+          }
+          &:hover{
+            @include rwd(1024){
+              background: conic-gradient(from 180deg at 50% 50%, #05B7EE 0deg, #005EA4 101.25deg, #05B7EE 198.75deg, #005EA4 288.75deg, #05B7EE 359.96deg, #05B7EE 360deg),
+              linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)); 
+              border: 3px solid #3aaae3;
+              box-shadow: 0px 0px 5px #333 inset;
+              box-sizing: border-box;
+              height: 50px;
+            }
+            a{
+              @include rwd(1024){
+                height: 44px;
+              }
+            }
+          }
+        }
+      }
+      .video-lsit-wrap{
+        .video-list-name{
+          @include fzrem (19);
+          color: #fff;
+          text-align: center;
+          margin-top: 30px;
+          @include rwd(1024){
+            margin-top: 50px;
+          }
+        }
+      }
+      .video-info-wrap{
+        margin-bottom: 50px;
+        .radio,
+        .tv-programme,
+        .tv-drama{
+          display: none;
+          &.active{
+            display: block;
+          }
+          ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            li{
+              width: calc((100% - 20px) / 2);
+              margin-left: 20px;
+              margin-top: 20px;
+              border-radius: 10px;
+              &:nth-child(odd){
+                margin-left: 0;
+              }
+              img{
+                width: 100%;
+              }
+              .title{
+                color: #fff;
+                text-align: center;
+              }
+              &:hover{
+                @include rwd(1024){
+                  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.44));
+                }
+                .title{
+                  @include rwd(1024){
+                    color: #FF6D6D;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

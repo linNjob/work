@@ -1,0 +1,166 @@
+// 命名規則 ========================
+// W 	寬度 width
+// H 	高度 height
+// F 	文字 font
+// FF 	字型 fontfamily
+// C 	顏色 color
+// R 	圓角 radius
+// M 	邊距 margin
+// P 	內距 padding
+// B 	邊框 border
+// Btn 	按鈕 button
+// Bg 	背景 background
+// I 	文字檔圖示 icon
+// Z 	圖層高度 z-index
+// Hv 	滑過hover
+
+// 尺寸清單 ========================
+$W320:		320px;
+$W375:		375px;
+$W414:		414px;
+$W480:		480px;
+$W568:		568px;
+$W768:		768px;
+$W970:		970px;
+$W1024:		1024px;
+$W1200:		1200px;
+$W1220:		1220px;
+$W1440:		1440px;
+
+// 版型寬度定義 ========================
+$W-l: 	$W1200;	// 1366尺寸
+$W-m: 	$W970;	// 1024尺寸 + 平板橫向
+$W-s: 	$W768;	// 平板直向
+$W-xs: 	$W320;	// 手機最小尺寸
+
+// 主色系 ========================
+$C-def:			#333333;
+$C-red:			#d9534f;
+$C-yellow:	#f0ad4e;
+$C-blue:		#42c0cc;
+$C-green: 	#5cb85c;
+
+$C-scarlet: #FF6D6D;
+
+
+
+// 字型 ========================
+$FF-def: "Arial",
+				//  "Century Gothic",
+				 "Microsoft JhengHei",
+				 "PingFang TC",
+				 sans-serif;
+// 行高 ========================
+$F-H: 	1.68; // 約fz-15  lh-22
+$F-H-m: 30px;
+$F-H-l: 40px;
+
+// 字體 ========================
+// 預設字體大小 -----------------
+$browser-size: 16; 	// 預設字體大小，不能加單位
+
+$F-Btitle:	19px;	// 特殊標題
+$F-title:	17px;	// 標題
+$F-text:	15px;	// 一般文字
+$F-note:	13px;	// 小標、註解
+$F-other:	12px;	// 其他不重要的文字
+
+// 文字色 ========================
+$F-C-def: #595757;
+$F-C-remark: #bdbdbd;
+$F-C-option-disabled: #dcdcdc;
+$F-C-hight-light: $C-red;
+
+// 圓角 ========================
+$R: 4px;
+// $Btn-R: 4px;
+
+// 邊距 ========================
+$M-def: 15px;
+$M-m: 10px;
+$M-s: 5px;
+
+// 內距 ========================
+$P-def: 15px;
+$P-form: 8px;
+
+// Btn-P ------------------------------
+$Btn-P-m: 0px 4px;
+$Btn-P-l: 0px 8px;
+
+// 邊框色 ========================
+$border-def: solid 1px #dcdcdc;
+
+
+// Btn ===============================
+$Btn-H-m: $F-H-m;
+$Btn-H-l: $F-H-l;
+
+// Btn border  ------------------------------
+$Btn-def-B: 			#d9d7d7;	// 預設
+$Btn-danger-B: 			#c73a36;	// 錯誤
+$Btn-warning-B: 		#dc9735; 	// 警告
+$Btn-success-B: 		#4ca94c; 	// 核可/確定
+$Btn-general-B: 		#30abb7; 	// 一般
+$Btn-cancel-B: 			#000000;	// 取消
+$Btn-lock-B: 			#dcdcdc; 	// 鎖定
+// Btn color --------------------------------
+$Btn-def-C: 			#595757;	// 預設
+$Btn-danger-C: 			#ffffff;	// 錯誤
+$Btn-warning-C: 		#ffffff; 	// 警告
+$Btn-success-C: 		#ffffff; 	// 核可/確定
+$Btn-general-C: 		#ffffff; 	// 一般
+$Btn-cancel-C: 			#ffffff;	// 取消
+$Btn-lock-C: 			#d9d7d7; 	// 鎖定
+// Btn background ---------------------------
+$Btn-def-Bg: 			#ffffff;	// 預設
+$Btn-danger-Bg: 		#d9534f;	// 錯誤
+$Btn-warning-Bg: 		#f0ad4e; 	// 警告
+$Btn-success-Bg: 		#5cb85c; 	// 核可/確定
+$Btn-general-Bg: 		#42c0cc; 	// 一般
+$Btn-cancel-Bg: 		#333333;	// 取消
+$Btn-lock-Bg: 			#f7f7f9; 	// 鎖定
+// Btn background hover ---------------------
+$Btn-def-Bg-Hv: 		#f9f9f9;	// 預設
+$Btn-danger-Bg-Hv: 		#f16661;	// 錯誤
+$Btn-warning-Bg-Hv: 	#fbbd65; 	// 警告
+$Btn-success-Bg-Hv: 	#6cc76c; 	// 核可/確定
+$Btn-general-Bg-Hv: 	#4cceda; 	// 一般
+$Btn-cancel-Bg-Hv: 		#565656;	// 取消
+$Btn-lock-Bg-Hv: 		#f7f7f9; 	// 鎖定
+
+// form padding ========================
+$input-P: 4px 8px;
+$input-M: 5px 0px;
+$select-P: 4px 8px;
+$textarea-P: 8px;
+
+// form light-height ========================
+$texttarea-LH: 23px;
+
+// light-height ========================
+$LH-def: 20px;
+
+// icon 字體 大小 ========================
+// 設計要在16X16PX的尺寸下製作
+$I-F16-xl: 32px;
+$I-F16-l: 24px;
+$I-F16-m: 20px;
+$I-F16-s: 16px;
+
+
+// text-indent ========================
+// 隱藏偏移位置
+$ti-def: -999999px;
+
+// z-index ========================
+$Z-xl: 	9999;
+$Z-l: 	999;
+$Z-m: 	99;
+$Z-s: 	9;
+
+// transition-duration 速度
+$transition-duration-def: .5s;
+
+
+// 偏移

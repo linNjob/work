@@ -1,0 +1,48 @@
+.page-num-wrap{
+  margin: 50px 0 150px;
+  @include rwd(480){
+    margin: 50px 0 100px;
+  }
+}
+#pagination-demo{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  li{
+    border-radius: 8px;
+    border: solid 2px  rgba(255, 109, 109, 0.6);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 5px;
+    &:first-child{
+      margin-left: 0;
+    }
+    a{
+      display: block;
+      color: rgba(255, 109, 109, 0.6); 
+      text-decoration: none;
+    }
+    &.active{
+      border: solid 2px #FF6D6D;
+      a{
+        color: #FF6D6D;
+      }
+    }
+    &:hover{
+      @include rwd(1024){
+        border: solid 2px #FF6D6D;
+      }
+      a{
+        @include rwd(1024){
+          color: #FF6D6D;
+        }
+      }
+    }
+  }
+}

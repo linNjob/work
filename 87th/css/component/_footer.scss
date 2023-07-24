@@ -1,0 +1,35 @@
+.go-top{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: $Z-m;
+  padding: 6px;
+  box-sizing: border-box;
+  @include rwd(1024){
+    padding: 0;
+    // width: 52px;
+    // height: 52px;
+    right: 10px;
+    bottom: 10px;
+  }
+  img{
+    width: 100%;
+  }
+}
+.copyright{
+  @include fzrem (12);
+  color: #A1A3A4;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  @include rwd(1024){
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+  }
+  @include rwd(1280){
+    padding-left: 30px;
+  }
+}

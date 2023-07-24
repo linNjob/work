@@ -1,0 +1,16 @@
+// 文字結尾樣式 =============================
+%text-end01{ // 單行...
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis; 	// 結尾... 樣式
+	white-space: nowrap;		// 不折行
+	width: 100%;				// 要設寬度才會執行
+}
+%text-end02{ // 多行...
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	
+}

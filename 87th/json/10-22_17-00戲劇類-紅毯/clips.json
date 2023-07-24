@@ -1,0 +1,152 @@
+{
+    "mode": 3,
+    "default": {
+        "radio": [
+            {
+                "title": "2022第57屆廣播金鐘獎頒獎典禮現場LIVE直播",
+                "videoId": "fonZTizvtno"
+            }
+        ],
+        "tvProgramme": [
+            {
+                "title": "2022第57屆電視金鐘獎－節目類　頒獎典禮現場LIVE直播",
+                "videoId": "7WIWbaxmyCg"
+            }
+        ],
+        "tvDrama": [
+            {
+                "title": "2022第57屆電視金鐘獎－戲劇類　星光大道現場LIVE直播",
+                "videoId": "PM45YUe3Aew"
+            }
+        ]
+    },
+    "content": {
+        "radio": [
+            {
+                "title": "2022第57屆廣播金鐘獎頒獎典禮現場LIVE直播",
+                "videoId": "fonZTizvtno"
+            },
+            {
+                "title": "2022第57屆廣播金鐘獎頒獎典禮多場景：手語",
+                "videoId": "Ha13oVDPN0Q"
+            },
+            {
+                "title": "2022第57屆廣播金鐘獎頒獎典禮多場景：新聞中心",
+                "videoId": "UM7rpsfbtPc"
+            },
+            {
+                "title": "第57屆廣播金鐘 入圍公布記者會",
+                "videoId": "w4l7veaai4Y"
+            },
+            {
+                "title": "第57屆廣播金鐘 主持人發布會",
+                "videoId": "grMT9kTTdlU"
+            }
+            
+        ],
+        "tvProgramme": [
+            {
+                "title": "2022第57屆電視金鐘獎－節目類　星光大道現場LIVE直播",
+                "videoId": "q1PLOf-qKbM"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－節目類　星光大道多場景：主持人區",
+                "videoId": "kQbiMNaU4_o"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－節目類　星光大道多場景：媒體訪問區",
+                "videoId": "i0XPuv1OjIY"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－節目類　頒獎典禮現場LIVE直播",
+                "videoId": "7WIWbaxmyCg"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－節目類　頒獎典禮多場景：手語",
+                "videoId": "uJkTntxahY8"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－節目類　頒獎典禮多場景：新聞中心",
+                "videoId": "7KtILQEiNUA"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－節目類　頒獎典禮多場景：舞台正視角全景",
+                "videoId": "0Bb1haXGsXI"
+            },
+            { 
+                "title": "第57屆電視金鐘 入圍公布記者會",
+                "videoId": "Pebnl10q7k0"
+            },
+            {
+                "title": "第57屆電視金鐘獎星光大道主持人發布會",
+                "videoId": "d4P5x6GvT4g"
+            },
+            {
+                "title": "第57屆電視金鐘獎典禮主持人發布會",
+                "videoId": "31tBzLsYrFg"
+            }
+        ],
+        "tvDrama": [
+            {
+                "title": "2022第57屆電視金鐘獎－戲劇類　星光大道現場LIVE直播",
+                "videoId": "PM45YUe3Aew"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－戲劇類　星光大道多場景：主持人區",
+                "videoId": "xxHIRYFsKn4"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－戲劇類　星光大道多場景：媒體訪問區",
+                "videoId": "A67iX4o_J_8"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－戲劇類　頒獎典禮現場LIVE直播",
+                "videoId": "yjGtSTf-RlQ"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－戲劇類　頒獎典禮多視角：手語",
+                "videoId": "gDngoUd6IWY"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－戲劇類　頒獎典禮多視角：新聞中心",
+                "videoId": "UyufYFww16o"
+            },
+            {
+                "title": "2022第57屆電視金鐘獎－戲劇類　頒獎典禮多視角：舞台正視角全景",
+                "videoId": "_nhATBC5AMk"
+            },
+            {
+                "title": "第57屆電視金鐘 入圍公布記者會",
+                "videoId": "Pebnl10q7k0"
+            },
+            {
+                "title": "第57屆電視金鐘獎星光大道主持人發布會",
+                "videoId": "d4P5x6GvT4g"
+            },
+            {
+                "title": "第57屆電視金鐘獎典禮主持人發布會",
+                "videoId": "31tBzLsYrFg"
+            }
+        ]
+    },
+    "schedule": {
+        "radio": [
+            {
+                "start": "2022-10-14",
+                "end": "2022-10-16T23:59"
+            }
+        ],
+        "tvProgramme": [
+            {
+                "start": "2022-10-20",
+                "end": "2022-10-22T08:59"
+            }
+        ],
+        "tvDrama": [
+            {
+                "start": "2022-10-22T09:00",
+                "end": "2022-10-23T23:59"
+            }
+        ]
+    }
+}

@@ -1,0 +1,180 @@
+[v-cloak]{
+  display: none;
+}
+body{
+	font-family: $FF-def;
+	line-height: $F-H;
+	// margin-top: 50px;
+	@include fzrem (15);
+	// @include rwd(1024){
+	// 	margin-top: 0;
+	// }
+}
+// 版型
+.wrap-table{
+	// margin-top: 15px;
+	// &:nth-child(1),
+	// &:nth-child(2){
+	// 	margin-top: 0;
+	// }
+}
+.area-table{
+	padding: 0 $P-def;
+	min-width: 320px;
+	box-sizing: border-box;
+	@include rwd(1024){	// W1024
+		width: $W-m;	// W970
+		margin: auto;
+		padding: 0;
+	}
+	@include rwd(1280){ // W1280
+		width: $W-l;	// W1200
+		margin: auto;
+	}
+}
+.box-table {}
+.block-table {}
+
+.wrap-Btn{
+	display: flex;
+	flex-direction: row; 	// 左到右
+	flex-wrap: wrap; 		// 可折行
+	.Btn{
+		margin-left: $M-m;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+}
+.table-P0{
+	padding: 0;
+}
+
+// title
+.table-title{
+	font-size: $F-title;
+	@include fzrem (15);
+}
+
+h1,
+h2{
+	display: none;
+}
+
+.go-top{
+	display: none;
+}
+
+.btn-style{
+	margin: 0;
+	padding: 0;
+  list-style-type: none;
+	li{
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+		conic-gradient(from 180deg at 50% 50%, #05B7EE 0deg, #005EA4 101.25deg, #05B7EE 198.75deg, #005EA4 288.75deg, #05B7EE 359.96deg, #05B7EE 360deg);
+		border-radius: 8px;
+		height: 50px;
+		margin-left: 10px;
+		&:first-child{
+			margin-left: 0;
+		}
+		a{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-content: center;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			color: #fff;
+			height: 50px;
+			@include fzrem (14);
+      line-height: 17px;
+			span{
+				display: block;
+			}
+		}
+		&.active{
+			background: conic-gradient(from 180deg at 50% 50%, #05B7EE 0deg, #005EA4 101.25deg, #05B7EE 198.75deg, #005EA4 288.75deg, #05B7EE 359.96deg, #05B7EE 360deg),
+			linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16));          
+			border: 3px solid #3aaae3;
+			box-shadow: 0px 0px 5px #333 inset;
+			box-sizing: border-box;
+			height: 50px;
+			a{
+				height: 44px;
+			}
+		}
+		&:hover{
+			@include rwd(1024){
+				background: conic-gradient(from 180deg at 50% 50%, #05B7EE 0deg, #005EA4 101.25deg, #05B7EE 198.75deg, #005EA4 288.75deg, #05B7EE 359.96deg, #05B7EE 360deg),
+				linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)); 
+				border: 3px solid #3aaae3;
+				box-shadow: 0px 0px 5px #333 inset;
+				box-sizing: border-box;
+				height: 50px;
+			}
+			a{
+				@include rwd(1024){
+					height: 44px;
+				}
+			}
+		}
+	}
+}
+.hoverPointer{
+	cursor: pointer;
+}
+
+.bg-wrap{
+	background: url(https://attach.setn.com/data/gba57/images/bg/bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -999999;
+	@media screen and (-webkit-min-device-pixel-ratio: 2),
+		   screen and (min--moz-device-pixel-ratio: 2){
+	  background: url(https://attach.setn.com/data/gba57/images/bg/bg@2x.png);
+	  background-size: cover;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	}
+	@media screen and (-webkit-min-device-pixel-ratio: 3),
+		   screen and (min--moz-device-pixel-ratio: 3){
+	  background: url(https://attach.setn.com/data/gba57/images/bg/bg@3x.png);
+	  background-size: cover;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	}
+}
+// body{
+// 	background: url(https://attach.setn.com/data/gba57/images/bg/bg.png);
+// 	background-size: cover;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// 	@media screen and (-webkit-min-device-pixel-ratio: 2),
+// 		   screen and (min--moz-device-pixel-ratio: 2){
+// 	  background: url(https://attach.setn.com/data/gba57/images/bg/bg@2x.png);
+// 	  background-size: cover;
+// 	  background-position: center;
+// 	  background-repeat: no-repeat;
+// 	  background-attachment: fixed;
+// 	}
+// 	@media screen and (-webkit-min-device-pixel-ratio: 3),
+// 		   screen and (min--moz-device-pixel-ratio: 3){
+// 	  background: url(https://attach.setn.com/data/gba57/images/bg/bg@3x.png);
+// 	  background-size: cover;
+// 	  background-position: center;
+// 	  background-repeat: no-repeat;
+// 	  background-attachment: fixed;
+// 	}
+//   }

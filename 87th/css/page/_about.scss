@@ -1,0 +1,262 @@
+main{
+  article{
+    .kv-wrap{
+      .kv-bg{
+        .kv-info{
+          > .title{
+            @include fzrem (19);
+            width: 100%;
+            color: #44A4FD;
+            font-weight: bold;
+            background: radial-gradient(127.65% 1437.65% at 34.19% 35%, #6BC6FF 0%, #41D5E7 39.58%, #41D5E7 64.58%, #6BC6FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            @include rwd(1024){
+              @include fzrem (19);
+              margin-top: 10px;
+              &:first-child{
+                margin-top: 0;
+              }
+            }
+            @include rwd(1280){
+              @include fzrem (25);
+            }
+          }
+          > .info{
+            @include fzrem (15);
+            color: #fff;
+            width: 100%;
+            span{
+              margin-left: 10px;
+            }
+            @include rwd(1024){
+              @include fzrem (15);
+              line-height: 29px;
+            }
+            @include rwd(1280){
+              @include fzrem (19);
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+    .info-wrap{
+      .about-btn-list{
+        margin: 50px 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li{
+          // background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+          // conic-gradient(from 180deg at 50% 50%, #05B7EE 0deg, #005EA4 101.25deg, #05B7EE 198.75deg, #005EA4 288.75deg, #05B7EE 359.96deg, #05B7EE 360deg);
+          // border-radius: 8px;
+          // height: 50px;
+          // box-sizing: border-box;
+          width: calc((100% - 20px) / 3);
+          // margin-left: 10px;  
+          // &:first-child{
+          //   margin-left: 0;
+          // }
+          
+          a{
+            // display: flex;
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            // align-content: center;
+            // justify-content: center;
+            // align-items: center;
+            // text-decoration: none;
+            // color: #fff;
+            // height: 50px;
+            // @include fzrem (14);
+            // line-height: 17px;
+            span{
+              // display: block;
+            }
+          }
+          &.active{
+            // background: conic-gradient(from 180deg at 50% 50%, #05B7EE 0deg, #005EA4 101.25deg, #05B7EE 198.75deg, #005EA4 288.75deg, #05B7EE 359.96deg, #05B7EE 360deg),
+            // linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16));          
+            // border: 3px solid #3aaae3;
+            // box-shadow: 0px 0px 5px #333 inset;
+            // box-sizing: border-box;
+            // height: 50px;
+            a{
+              // height: 44px;
+            }
+          }
+          &:hover{
+            @include rwd(1024){
+              // background: conic-gradient(from 180deg at 50% 50%, #05B7EE 0deg, #005EA4 101.25deg, #05B7EE 198.75deg, #005EA4 288.75deg, #05B7EE 359.96deg, #05B7EE 360deg),
+              // linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)); 
+              // border: 3px solid #3aaae3;
+              // box-shadow: 0px 0px 5px #333 inset;
+              // box-sizing: border-box;
+              // height: 50px;
+            }
+            // a{
+            //   @include rwd(1024){
+            //     height: 44px;
+            //   }
+            // }
+          }
+        }
+      }
+      .about-info-wrap{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        .about-history,
+        .about-tv,
+        .about-radio{
+          display: none;
+          margin-bottom: 50px;
+          &.active{
+            display: block;
+          }
+        }
+        .about-history{
+          .about-img{
+            width: 100%;
+            max-width: 550px;
+            margin: auto;;
+            img{
+              width: 100%;
+            }
+          }
+          .about-history-list{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li{
+              .line{
+                display: flex;
+                justify-content: center;
+                margin: 15px auto;
+              }
+              .time{
+                text-align: center;
+                color: #FF6D6D;
+                @include fzrem (47);
+                font-weight: bold;
+                text-shadow: 0px 0px 8px rgba(255, 255, 255, .5);
+              }
+              .info{
+                display: flex;
+                justify-content: center;
+                color: #fff;
+                width: 100%;
+                max-width: 500px;
+                margin: auto;
+                text-align: justify;
+              }
+            }
+          }
+        }
+        .about-tv,
+        .about-radio{
+          color: #fff;
+          .about_t1{
+            color: #FF6D6D;
+            // @include fzrem (23);
+          }
+          // .about-tv-info{
+          //   > li{
+          //     color: #FF6D6D;
+          //     list-style-type: cjk-ideographic;
+          //     @include fzrem (23);
+          //     .title{
+          //       margin-top: 10px;
+          //     }
+          //     .desc{
+          //       color: #fff;
+          //       @include fzrem (15);
+          //     }
+          //     >ul{
+          //       list-style-type: none;
+          //       padding: 0;
+          //       padding-left: 2em;
+          //       text-indent: -1.3em;
+          //       color: #fff;
+          //       >li{
+          //         @include fzrem (15);
+          //         >ul{
+          //           list-style-type: decimal;
+          //           padding: 0;
+          //           padding-left: 0em;
+          //           >li{
+          //             padding-left: 0em;
+          //             text-indent: 0em;
+          //           }
+          //         }
+          //       }
+          //     }
+          //   }
+          // }
+        }
+      }
+    }
+  }
+}
+@keyframes KV_Img {
+  0% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv01@2x.png);
+  }
+  33% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv02@2x.png);
+  }
+  66% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv03@2x.png);
+  }
+  100% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv01@2x.png);
+  }
+}
+@keyframes KV_Pic1 {
+  0% {
+   opacity: 1;
+  }
+  33% {
+      opacity: 0;
+  }
+  66% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes KV_Pic2 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes KV_Pic3 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

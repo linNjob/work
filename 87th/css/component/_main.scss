@@ -1,0 +1,185 @@
+main{
+  @include rwd(1024){
+    display: flex;
+  }
+  aside{
+    background: rgba(0, 0, 0, 0.5);
+    @include rwd(1024){
+      width: 250px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+    @include rwd(1280){
+      width: 300px;
+    }
+    .logo{
+      width: 150px;
+      margin: 20px auto 0;
+      text-align: center;
+      @include rwd(1024){
+        display: none;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+  article{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    @include rwd(1024){
+      margin-left: 250px;
+      margin-top: 0px;
+    }
+    @include rwd(1280){
+      margin-left: 300px;
+    }
+    .kv-wrap{
+      position: relative;
+      @include rwd(1024){
+        min-height: 700px;
+      }
+      @include rwd(1280){
+        min-height: 830px;
+      }
+      .kv-poster{
+        // width: 80%;
+        // margin:  30px auto;
+        @include rwd(1024){
+          width: 280px;
+          position: absolute;
+          top: 205px;
+          left: 0;
+          z-index: $Z-m;
+        }
+        @include rwd(1280){
+          width: 380px;
+        }
+        img{
+          width: 100%;
+          &.mobile{
+            @include rwd(1024){
+              display: none;
+            }
+          }
+          &.pc{
+            display: none;
+            @include rwd(1024){
+              display: block;
+            }
+          }
+        }
+        picture{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          animation-duration: 15s;
+          animation-iteration-count: infinite;
+          &:nth-child(1){
+            position: static;
+            animation-name: KV_Pic1;
+          }
+          &:nth-child(2){
+            animation-name: KV_Pic2;
+          }
+          &:nth-child(3){
+            animation-name: KV_Pic3;
+          }
+        }
+      }
+      .kv-bg{
+        // margin: 30px auto 0;
+        // width: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: nowrap;
+        @include rwd(1024){
+          width: 100%;
+          background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv01@2x.png);
+          background-repeat: no-repeat;
+          // background-size: 100%;
+          // background-position: top;
+          animation: KV_Img 15s infinite;
+
+          background-size: 680px;
+          min-height: 680px;
+          background-position: top right;
+          // margin: inherit;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          position: absolute;
+          top: 0;
+          left: 40px;
+        }
+        @include rwd(1280){
+          background-size: 760px;
+          min-height: 760px;
+          left: 63px;
+        }
+        .kv-header,
+        .kv-info{
+          @include rwd(1024){
+            margin-left: 255px;
+            width: 345px;
+          }
+          @include rwd(1280){
+            margin-left: 350px;
+            width: 415px;
+          }
+        }
+        .kv-header{
+          @include rwd(1024){
+            margin-top: 140px;
+          }
+          @include rwd(1280){
+            margin-top: 138px;
+          }
+          > .title{
+            @include fzrem (37);
+            color: #44A4FD;
+            font-weight: bold;
+            background: radial-gradient(127.65% 1437.65% at 34.19% 35%, #44A4FD 0%, #41D5E7 39.58%, #41D5E7 64.58%, #44A4FD 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            line-height: 50px;
+            @include rwd(1024){
+              @include fzrem (37);
+              line-height: 50px;
+            }
+            @include rwd(1280){
+              @include fzrem (45);
+              line-height: 59px;
+            }
+          }
+          > .sub-title{
+            color: #fff;
+            @include fzrem (19);
+            @include rwd(1024){
+              @include fzrem (31);
+              line-height: 37px;
+            }
+            @include rwd(1280){
+              @include fzrem (35);
+              line-height: 45px;
+            }
+          }
+          .line{
+            height: 1px;
+            background: #4f4f4f;
+            margin: 5px auto;
+            @include rwd(1024){
+              // width: 70%;
+              margin: 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

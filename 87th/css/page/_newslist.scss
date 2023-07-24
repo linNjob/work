@@ -1,0 +1,178 @@
+main{
+  article{
+    .kv-wrap{
+      .kv-bg{
+        .kv-info{
+          .news-list{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            @include rwd(1024){
+              // width: calc(100% - 110px); // 人工計算
+            }
+            @include rwd(1280){
+              // width: calc(100% - 120px); // 人工計算
+            }
+            li{
+              @include rwd(1024){
+                margin-top: 15px;
+              }
+              a{
+                display: flex;
+                text-decoration: none;
+                img{
+                  width: 20px;
+                  height: 14px;
+                  margin-right: 8px;
+                  margin-top: 5px;
+                  @include rwd(768){
+                    margin-top: 8px;
+                  }
+                }
+                .info{
+                  @include fzrem (15);
+                  @extend %text-end01;
+                  color: #fff;
+                  // line-height: 3em;
+                  @include rwd(768){
+                    @include fzrem (19);
+                  }
+                }
+              }
+              &:hover{
+                a{
+                  .info{
+                    @include rwd(1024){
+                      background: radial-gradient(127.65% 1437.65% at 34.19% 35%, #6BC6FF 0%, #41D5E7 39.58%, #41D5E7 64.58%, #6BC6FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+                      background-clip: text;
+                      -webkit-background-clip: text;
+                      color: transparent;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .info-wrap{
+      margin-top: 20px;
+      .news-list-wrap{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li{
+          width: calc((100% - 20px) / 2);
+          margin-top: 20px;
+          @include rwd(768){
+            width: calc((100% - 50px) / 2);
+            margin-top: 40px;
+          }
+          &:nth-child(even){
+            margin-left: 20px;
+            @include rwd(768){
+              margin-left: 50px;
+            }
+          }
+          &:nth-child(1),
+          &:nth-child(2){
+            margin-top: 0;
+          }
+          a{
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: center;
+            img{
+              width: 100%;
+              border-radius: 5px;
+              overflow: hidden;
+            }
+            .title{
+              color: #fff;
+              @include fzrem (15);
+              line-height: 1.3em;
+              margin-top: 10px;
+            }
+          }
+          &:hover{
+            @include rwd(1024){
+              filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.44));
+            }
+            a{
+              .title{
+                @include rwd(1024){
+                  color: #FF6D6D;  
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes KV_Img {
+  0% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv01@2x.png);
+  }
+  33% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv02@2x.png);
+  }
+  66% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv03@2x.png);
+  }
+  100% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv01@2x.png);
+  }
+}
+@keyframes KV_Pic1 {
+  0% {
+   opacity: 1;
+  }
+  33% {
+      opacity: 0;
+  }
+  66% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes KV_Pic2 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes KV_Pic3 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

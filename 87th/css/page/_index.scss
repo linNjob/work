@@ -1,0 +1,351 @@
+main{
+  article{
+    .kv-wrap{
+      .kv-bg{
+        .kv-info{
+          > .title{
+            @include fzrem (19);
+            width: 100%;
+            color: #44A4FD;
+            font-weight: bold;
+            background: radial-gradient(127.65% 1437.65% at 34.19% 35%, #6BC6FF 0%, #41D5E7 39.58%, #41D5E7 64.58%, #6BC6FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            @include rwd(1024){
+              @include fzrem (19);
+              margin-top: 10px;
+              &:first-child{
+                margin-top: 0;
+              }
+            }
+            @include rwd(1280){
+              @include fzrem (25);
+            }
+          }
+          > .info{
+            @include fzrem (15);
+            color: #fff;
+            width: 100%;
+            span{
+              margin-left: 10px;
+            }
+            @include rwd(1024){
+              @include fzrem (15);
+              line-height: 21px;
+            }
+            @include rwd(1280){
+              @include fzrem (19);
+              line-height: 27px;
+            }
+          }
+        }
+      }
+    }
+    .show-time-wrap{
+      margin-top: 30px;
+    }
+    .show-time-wrap,
+    .announcement-wrap{
+      .title{
+        @include fzrem (19);
+        color: $C-scarlet;
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.7);
+        @include rwd(1024){
+          @include fzrem (24);
+        }
+      }
+      .sub-title{
+        color: #fff;
+        @include fzrem (15);
+        @include rwd(1024){
+          @include fzrem (20);
+        }
+      }
+      .show-time-info{
+        color: #fff;
+        @include fzrem (15);
+      }
+      .announcement-info{
+        color: #fff;
+        @include fzrem (15);
+      }
+      .announcement-info-list{
+        list-style-type: decimal;
+        color: #fff;
+        @include fzrem (15);
+      }
+    }
+    .banner-wrap{
+      margin: 50px auto;
+      display: flex;
+      justify-content: center;
+      .owl-carousel{
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        @include rwd(1024){
+          max-width: 720px;
+        }
+        @include rwd(1280){
+          max-width: 900px;
+        }
+      }
+    }
+    .cooperation-wrap{
+      margin-bottom: 50px;
+      .cooperation-area{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        > li{
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          margin-top: 10px;
+          &:first-child{
+            margin-top: 0;
+          }
+          .title{
+            color: #fff;
+            width: 75px;
+            // margin-top: 12px;
+            margin-top: 8px;
+          }
+          .cooperation-list{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            width: calc(100% - 75px);
+            > li{
+              margin-right: 20px;
+              background-image: url(https://attach.setn.com/data/gba57/images/cooperation/partner@2x.png);
+              // background-image: url(../images/cooperation/partner@2x.png); // AMedia
+              // background-image: url(/images/cooperation/partner@2x.png); // Local Test
+              background-size: 270px auto;
+              background-repeat: no-repeat;
+              margin-bottom: 8px;
+              height: 40px;
+              // background-size: auto 680px;
+              // height: 50px;
+              &:last-child{
+                margin-right: 0;
+              }
+              &.logo{
+                // 指導單位
+                &.logo-moc{
+                  // width: 130px;
+                  width: 105px;
+                  background-position: 0 0;
+                }
+                // 主辦單位
+                &.logo-bamid{
+                  // width: 270px;
+                  width: 205px;
+                  background-position: 0 -40px;
+                }
+                // 承辦單位
+                &.logo-set{
+                  // width: 148px;
+                  width: 115px;
+                  background-position: 0 -80px;
+                }
+                // 協辦單位
+                &.logo-taiwanradio{
+                  // width: 270px;
+                  width: 225px;
+                  background-position: 0 -120px;
+                }
+                // 贊助單位
+                &.logo-UC_Pharma{
+                  // width: 127px;
+                  width: 100px;
+                  background-position: 0 -160px;
+                }
+                &.logo-CPC{
+                  // width: 252px;
+                  width: 180px;
+                  background-position: 0 -200px;
+                }
+                &.logo-mcdonalds{
+                  // width: 168px;
+                  width: 135px;
+                  background-position: 0 -240px;
+                }
+                // 媒體協辦
+                &.logo-ptsplus{
+                  // width: 67px;
+                  width: 55px;
+                  background-position: 0 -280px;
+                }
+                &.logo-vidol{
+                  // width: 80px;
+                  width: 60px;
+                  background-position: 0 -320px;
+                }
+                &.logo-setn{
+                  // width: 193px;
+                  width: 145px;
+                  background-position: 0 -360px;
+                }
+                &.logo-mtv{
+                  // width: 50px;
+                  width: 40px;
+                  background-position: 0 -400px;
+                }
+                &.logo-line_today{
+                  // width: 163px;
+                  width: 120px;
+                  background-position: 0 -440px;
+                }
+                &.logo-line_tv{
+                  // width: 138px;
+                  width: 100px;
+                  background-position: 0 -480px;
+                }
+                &.logo-989{
+                  // width: 189px;
+                  width: 140px;
+                  background-position: 0 -520px;
+                }
+                &.logo-yahoo{
+                  // width: 140px;
+                  width: 105px;
+                  background-position: 0 -560px;
+                }
+                &.logo-audi{
+                  // width: 90px;
+                  width: 65px;
+                  background-position: 0 -600px;
+                }
+                &.logo-CHT{
+                  // width: 130px;
+                  width: 105px;
+                  background-position: 0 -640px;
+                }
+                &.logo-hueiyeh{
+                  width: 70px;
+                  background-position: 0 -680px;
+                }
+                &.logo-motex{
+                  width: 180px;
+                  background-position: 0 -720px;
+                }
+                &.logo-ourfamily{
+                  width: 120px;
+                  background-position: 0 -760px;
+                }
+                &.logo-ILING{
+                  width: 95px;
+                  background-position: 0 -800px;
+                }
+                &.logo-TAIYEN1{ // 取消使用
+                  width: 75px;
+                  background-position: 0 -840px;
+                }
+                &.logo-TAIYEN{
+                  width: 140px;
+                  background-position: 0 -880px;
+                }
+                &.logo-mineshine{ // 麥香
+                  width: 45px;
+                  background-position: 0 -920px;
+                }
+                &.logo-thermageFLX{ // 鳳凰電波
+                  width: 100px;
+                  background-position: 0 -960px;
+                }
+                &.logo-kagome{
+                  width: 53px;
+                  background-position: 0 -1000px;
+                }
+                &.logo-oneboy{
+                  width: 115px;
+                  background-position: 0 -1040px;
+                }
+              }
+              // .title{
+              //   color: #fff;
+              // }
+            }
+          }
+          &.car-comp,
+          &.telecom-operator-comp{
+            .title{
+              width: 125px;
+            }
+            .cooperation-list{
+              width: calc(100% - 125px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes KV_Img {
+  0% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv01@2x.png);
+  }
+  33% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv02@2x.png);
+  }
+  66% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv03@2x.png);
+  }
+  100% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv01@2x.png);
+  }
+}
+@keyframes KV_Pic1 {
+  0% {
+   opacity: 1;
+  }
+  33% {
+      opacity: 0;
+  }
+  66% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes KV_Pic2 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes KV_Pic3 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

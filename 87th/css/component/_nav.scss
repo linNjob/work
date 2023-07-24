@@ -1,0 +1,186 @@
+nav{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  width: 250px;
+  background: rgba(17, 16, 16, .8);
+  border-radius: 20px 0 0 20px;
+  transition-duration: .5s;
+  z-index: $Z-l;
+  &.open{
+    right: 0;
+  }
+  @include rwd(1024){
+    right: 0;
+    background: transparent;
+    position: static;
+    width: 100%;
+  }
+}
+.nav-wrap{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  @include rwd(1024){
+    position: static;
+  }
+  .logo-nav{
+    img{
+      width: 150px;
+      margin: 50px auto 0;
+      display: block;
+      @include rwd(1024){
+        width: 200px;
+        margin: 80px auto 0;
+      }
+    }
+  }
+  .btn-nav-close{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include fzrem (27);
+    background: conic-gradient(from 180deg at 50% 50%, #FF8787 0deg, #F34D4D 101.25deg, #FF8787 191.25deg, #F34D4D 288.75deg, #FF8787 360deg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    @include rwd(1024){
+      display: none;
+    }
+    // img{
+    //   width: 100%;
+    // }
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 0 0;
+    li{
+      position: relative;
+      margin-top: 8px;
+      &:first-child{
+        margin-top: 0;
+      }
+      i.nav-icon{
+        width: 27px;
+        height: 25px;
+        background: url(https://attach.setn.com/data/gba57/images/icon/nav-icons-retina.5dee0b65.png) no-repeat top left;
+        background-size: 28px 318px;
+        // display: block;
+        display: none;
+        margin-right: 8px;
+        &.home{
+          height: 28px;
+          background-position: 0 -181px;
+        }
+        &.list{
+          width: 23px;
+          height: 26px;
+          background-position: 0 -237px;
+        }
+        &.newslist{
+          height: 26px;
+          background-position: 0 -291px;
+        }
+        &.event{
+          height: 27px;
+          background-position: 0 -124px;
+        }
+        &.clip{
+          height: 20px; 
+          background-position: 0 -75px;
+        }
+        &.about{
+          width: 28px;
+          height: 26px;
+          background-position: 0 -27px;
+        }
+      }
+      &.active{
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 5px;
+          background: $C-scarlet;
+          @include rwd(1024){
+            display: none;
+          }
+        }
+        i.nav-icon{
+          &.home{
+            background-position: 0 -152px;
+          }
+          &.list{
+            background-position: 0 -210px;
+          }
+          &.newslist{
+            background-position: 0 -264px;
+          }
+          &.event{
+            background-position: 0 -96px;
+          }
+          &.clip{
+            background-position: 0 -54px;
+          }
+          &.about{
+            background-position: 0 0;
+          }
+        }
+        a,
+        h3{
+          color: $C-scarlet;
+        }
+      }
+      a,
+      h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #D0D2D3;
+        text-decoration: none;
+        @include fzrem (15);
+        margin: 0;
+        font-weight: normal;
+        line-height: 40px;
+        @include rwd(1024){
+          @include fzrem (19);
+        }
+      }
+      &:hover{
+        @include rwd(1024){
+          a,
+          h3{
+            color: $C-scarlet;
+          }
+        }
+      }
+    }
+  }
+  .vote{
+    width: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    margin: auto;
+    display: none;
+    @include rwd(1024){
+      display: block;
+    }
+    a{
+      display: block;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

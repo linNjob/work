@@ -1,0 +1,180 @@
+main{
+  article{
+    .kv-wrap{
+      .kv-bg{
+        .kv-header{
+          @include rwd(1024){
+            margin-top: 200px;
+          }
+        }
+        .kv-info{
+          > .title{
+            @include fzrem (19);
+            width: 100%;
+            color: #44A4FD;
+            font-weight: bold;
+            background: radial-gradient(127.65% 1437.65% at 34.19% 35%, #6BC6FF 0%, #41D5E7 39.58%, #41D5E7 64.58%, #6BC6FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            @include rwd(1024){
+              @include fzrem (19);
+              margin-top: 10px;
+              &:first-child{
+                margin-top: 0;
+              }
+            }
+            @include rwd(1280){
+              @include fzrem (25);
+            }
+          }
+          > .info{
+            @include fzrem (15);
+            color: #fff;
+            width: 100%;
+            margin-top: 10px;
+            span{
+              margin-left: 10px;
+            }
+            @include rwd(1024){
+              @include fzrem (15);
+              line-height: 21px;
+            }
+            @include rwd(1280){
+              @include fzrem (19);
+              line-height: 27px;
+            }
+          }
+        }
+      }
+    }
+    .show-time-wrap{
+      margin-top: 30px;
+    }
+    .event-info-wrap{
+      margin: 30px 0;
+      .title{
+        @include fzrem (19);
+        color: $C-scarlet;
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.7);
+        margin-top: 15px;
+        @include rwd(1024){
+          @include fzrem (24);
+        }
+      }
+      .event-info{
+        color: #fff;
+        @include fzrem (15);
+        a{
+          color: #f7bb34;
+        }
+      }
+      .info-disc{
+        padding: 0 0 0 20px;
+        margin: 0;
+      }
+      .highlight{
+        @include fzrem (19);
+        font-weight: bold;
+        color: #4ad5ff;
+      }
+      .remark{
+        margin: 15px 0;
+        @include fzrem (13);
+        color: #e1b66a;
+        a{
+          color: #f7bb34;
+        }
+      }
+    }
+    .show-time-wrap{
+      .title{
+        @include fzrem (19);
+        color: $C-scarlet;
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.7);
+        @include rwd(1024){
+          @include fzrem (24);
+        }
+      }
+      .sub-title{
+        color: #fff;
+        @include fzrem (15);
+        @include rwd(1024){
+          @include fzrem (20);
+        }
+      }
+      .show-time-info{
+        color: #fff;
+        @include fzrem (15);
+      }
+      .announcement-info{
+        color: #fff;
+        @include fzrem (15);
+      }
+      .announcement-info-list{
+        list-style-type: decimal;
+        color: #fff;
+        @include fzrem (15);
+      }
+    }
+  }
+}
+
+@keyframes KV_Img {
+  0% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv01@2x.png);
+  }
+  33% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv02@2x.png);
+  }
+  66% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv03@2x.png);
+  }
+  100% {
+    background-image: url(https://attach.setn.com/data/gba57/images/kv-bg/kv01@2x.png);
+  }
+}
+@keyframes KV_Pic1 {
+  0% {
+   opacity: 1;
+  }
+  33% {
+      opacity: 0;
+  }
+  66% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes KV_Pic2 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes KV_Pic3 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
